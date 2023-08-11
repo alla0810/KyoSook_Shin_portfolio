@@ -2,8 +2,8 @@
  
   * Author: Kyosook Shin
   * Author's Email: kyosook.shin@gmail.com
-  * Deployed URL: https://alla0810.github.io/module1-hw/
-  * GitHub: https://github.com/alla0810/module1-hw
+  * Deployed URL: https://alla0810.github.io/KyoSook_Shin_portfolio/
+  * GitHub: https://github.com/alla0810/KyoSook_Shin_portfolio
   * screenshot
 
 
