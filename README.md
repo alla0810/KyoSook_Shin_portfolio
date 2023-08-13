@@ -5,7 +5,8 @@
   * Deployed URL: https://alla0810.github.io/KyoSook_Shin_portfolio/
   * GitHub: https://github.com/alla0810/KyoSook_Shin_portfolio
   * screenshot
-
+    ![Screenshot 1](./assets/images/screen1.png)
+    ![Screenshot 2](./assets/images/screen2.png)
 
 ## Source Code References
   This project has used some reference codes from the following sites
