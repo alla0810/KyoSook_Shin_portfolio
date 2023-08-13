@@ -1,74 +1,139 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS Box Styling</title>
+    <title>KyoSook Shin</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />    
+    <link rel="stylesheet" href="./assets/css/reset.css" />    
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header>
-      <h1>Welcome to the store!</h1>
-      <p>
-        Add some box styling to the product cards to make them POP!
-      </p>
+      <h1>  KyoSook Shin</h1>
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <a href="#Section_About_Me">About Me</a>
+          <a href="#Section_Work">Work</a>
+          <a href="#Section_Contact_Me">Contact Me</a>
+          <a href="./assets/files/Resume_Shin.docx">Resume</a>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Navbar -->
-    <nav>
-      <a href="#">Camera</a>
-      <a href="#">Tablet</a>
-      <a href="#">Toilet Paper</a>
-      <a href="#">Wooden Spoons</a>
-    </nav>
+    <!-- background pattern image -->
+    <div class="background_img" role="img" aria-label="patterned background image">      
+      <nav_text_flex_box>Software Engineer</nav_text_flex_box>     
+      <figure>
+        <img src="./assets/images/kyosook.png" alt ="Profile Image" class="profile_img">
+      </figure>
+    </div>
 
-    <!-- Body -->
-    <main>
-      <!-- Sidebar -->
-      <aside>
-        <h2>The product cards would look better if...</h2>
-        <li>the corners were rounded out</li>
-        <li>there was a shadow</li>
-        <li>they were rotated slightly</li>
-      </aside>
-      <!-- Product Cards -->
-      <div class="products">
-        <section class="card">
-          <header>Camera</header>
-          <img src="./assets/images/camera.jpg" alt="black camera" />
-          <p>Price: $300</p>
+
+  <main>    
+      <section id = "Section_About_Me" class="box_left">
+        <left_box_text>About Me</left_box_text>
+      </section>
+
+      <section class="box_right">
+        <p1>
+          Under professional training at UT Boot Camp.
+        </p1>
+      </section>
+
+    <section id = "Section_Work" class="box_left">
+        <left_box_text>
+          Work
+        </left_box_text>
+    </section>
+    <section class="box_right">      
+      <div class="">
+        <div class = "app_img_second_wrapper">
+          <figure>
+            <a href="https://alla0810.github.io/module1-hw/"><img src="./assets/images/digital-marketing-meeting.jpg" alt = "Horiseon Landing Page" class = "app_large_img"></a>
+          </figure>
+          <div class = "margin_20px row_title">
+            <h2>Horisen Digital Marketting Landing Page</h2>
+          </div>
+        </div>
+
+        <br>
+        <section class="app_small_img_frame">
+          <div class = "app_img_second_wrapper">
+            <figure>
+              <img src="./assets/images/work2.jpg" alt = "Work 2" class = "app_each_small_img">
+            </figure>              
+            <div class = "row_title">
+              <h2>Work 2</h2>
+            </div>
+          </div>
+
+          <div class = "app_img_second_wrapper">
+            <figure>
+              <img src="./assets/images/work3.jpg" alt = "Work 3" class = "app_each_small_img">
+            </figure>
+            <div class = "row_title">
+              <h2>Work 3</h2>
+            </div>
+          </div>                      
         </section>
-        <section class="card">
-          <header>Tablet</header>
-          <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
-          <p>Price: $150</p>
-        </section>
-        <section class="card">
-          <header>Toilet Paper</header>
-          <img
-            src="./assets/images/toilet-paper.jpg"
-            alt="rolls of toilet paper in a basket"
-          />
-          <p>Price: $30</p>
-        </section>
-        <section class="card">
-          <header>Wooden Spoons</header>
-          <img
-            src="./assets/images/wooden-spoons.jpg"
-            alt="4 wooden spoons with different seasonings"
-          />
-          <p>Price: $10</p>
+
+        <section class="app_small_img_frame">
+          <div class = "app_img_second_wrapper">
+            <figure>
+              <img src="./assets/images/work4.jpg" alt = "Work 4" class = "app_each_small_img">
+            </figure>
+            <div class = "row_title">
+              <h2>Work 4</h2>
+            </div>
+          </div>
+
+          <div class = "app_img_second_wrapper">
+            <figure>
+              <img src="./assets/images/work5.jpg" alt = "Work 5" class = "app_each_small_img">
+            </figure>
+            <div class = "row_title">
+              <h2>Work 5</h2>
+            </div>
+          </div>                    
         </section>
       </div>
-    </main>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-      <h3>
-        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-        window!
-      </h3>
-    </footer>
+    <section id = "Section_Contact_Me"class="box_left">
+        <left_box_text>
+          Contact Me
+        </left_box_text>
+    </section>
+    <section class="box_right">
+      <contact_frame>
+        <ul2>
+          <b><a href="mailto:kyosook.shin@gmail.com">kyosook.shin@gmail.com</a></b>
+          <b><a href="https://github.com/alla0810/">GitHub</a></b>
+          <b><a href="https://www.linkedin.com/in/kyosook-shin/">LinkedIn</a></b>
+        </ul2>
+      </contact_frame>
+    </section>
+
+
+  </main>
+
+  <footer>
+        <p2>
+          Man who has had a dream for a long time will finally get looked like the dream
+        </p2>
+        <br>
+        <p2>
+          - Andre Malraux -
+        </p2>
+
+
+  </footer>
+
+
   </body>
+
+
 </html>

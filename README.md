@@ -10,7 +10,8 @@
 ## Source Code References
   This project has used some reference codes from the following sites
 
-  * Framework styling: https://git.bootcampcontent.com/University-of-Texas-at-Austin/UTA-VIRT-FSF-PT-07-2023-U-LOLC/-/tree/main/02-Advanced-CSS/01-Activities/10-Stu_Box-Styling
+    * https://git.bootcampcontent.com/University-of-Texas-at-Austin/UTA-VIRT-FSF-PT-07-2023-U-LOLC/-/tree/main/02-Advanced-CSS/01-Activities
+
 
   
 ## User Story
@@ -29,7 +30,7 @@ GIVEN I need to sample a potential employee's previous work
 
 * WHEN I click on the link to the section about their work, THEN the UI scrools to a section with titled images of the developer's applications
 
-* WHEN I am presented with the developer's first application, THEN that application's image should be alrger in size than the others
+* WHEN I am presented with the developer's first application, THEN that application's image should be larger in size than the others
 
 * WHEN I click on the images of the applications, THEN I am taken to that deployed application
 
@@ -51,7 +52,7 @@ Satisfies all of the preceding acceptance criteria.
 
 * Application resembles the mock-up functionality provided in the Challenge instructions.
  
- ![Application resembles the mock-up functionality provided in the Challenge instructions.](./Images/02-advanced-css-homework-demo.gif)
+ ![Application resembles the mock-up functionality provided in the Challenge instructions.](./assets/images//02-advanced-css-homework-demo.gif)
 
 
 ## Repository Quality: 13%
