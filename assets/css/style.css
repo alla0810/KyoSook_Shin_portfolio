@@ -10,7 +10,6 @@ body {
   flex-direction: column;
   overflow-y: scroll;    
   line-height: 1.3;
-
 }
 
 header {
@@ -29,17 +28,21 @@ h1 {
   color: #13293d;
   background-color: #bbcfe1;
   font-weight: 900;
-/*  font-family: 'Times New Roman', Times, serif;*/
   padding-left: 40px;
-/*  font-style:oblique;*/
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-h2 {  
+h2 {    
   font-size: 200%;
   color: #13293d;
   background-color: #bbcfe1;
   font-weight: bold;  
   text-align: right;
+
+  text-overflow: clip;
+  overflow: hidden;
 }
 
 .background_img {
@@ -54,7 +57,6 @@ h2 {
   background-size: cover;
   background-position: center;  
 }
-
 
 nav ul {
   display: flex;
@@ -89,62 +91,9 @@ nav_text_flex_box {
   border-style: none;
 }
 
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-}
-
-
-.box_left {
-  flex: 0 1 20%;
-
-  padding: 10px;
-  text-align: right;
-  border-style: none;
-  border-width: 1px;
-  flex-wrap: wrap;
-  width:30%;
-  flex-direction: column;
-
-  border-right-color: #13293d;
-  border-right-width: 5px;
-  border-right-style:ridge;
-
-  margin-bottom: 30px;
-}
-
-left_box_text {
-  font-size: 300%;
-  color: #13293d;
-  background-color: #fff;
-  font-weight: bold;
-  /*padding: 20px;*/
-  padding-right: 10px;;
-}
-
-
-.box_right {
-  flex: 0 1 80%;
- 
-  padding: 10px;
-  padding-left: 20px;
-  text-align: left;
-  border-style: none;
-  border-width: 1px;
-  flex-wrap: wrap;
-  width:80%;
-  flex-direction: column;  
-}
-
-.float-left {
-  float: left;
-  margin-right: 25px;
-}
-
 .profile_img
 {
+  display: flex;
   flex-shrink: 1;
   display: inline-block;
   max-height: 100px;
@@ -153,6 +102,72 @@ left_box_text {
   overflow:auto;
 }
 
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+
+.box_left {
+  flex: 1 1 20%;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  padding: 10px;
+  text-align: right;
+  border-style: none;
+  border-width: 1px;
+
+  border-right-color: #13293d;
+  border-right-width: 5px;
+  border-right-style:ridge;
+
+  margin-bottom: 30px;
+
+  min-width: auto;
+}
+
+left_box_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 300%;
+  color: #13293d;
+  background-color: #fff;
+  font-weight: bold;
+
+  padding-right: 10px;;
+}
+
+
+.box_right {
+  flex: 1 1 80%;
+  flex-wrap: nowrap;
+/*  width:80%;*/
+  flex-direction: column;  
+ 
+  padding: 10px;
+  padding-left: 20px;
+  text-align: left;
+  border-style: none;
+  border-width: 1px;
+
+  min-width: auto;
+
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+/*
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+*/
+
 .app_large_img
 {
   flex-shrink: 1;
@@ -160,7 +175,7 @@ left_box_text {
   justify-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 70vw;
   
   margin-left: 20px;
   /*margin-right: 50px;  */
@@ -178,7 +193,7 @@ left_box_text {
   flex-direction:row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 70vw;
   
 /*  height: 100vh;*/
   margin: 0 auto;
@@ -199,8 +214,8 @@ left_box_text {
 .app_each_small_img
 {
   width: 90%;
-  flex-wrap: wrap;
-  text-align: center;
+  flex-wrap: nowrap;
+  text-align: left;
   border: 10px solid #bbcfe1;  
 }
 
@@ -216,17 +231,18 @@ contact_frame {
   margin-left: 20px;  
 }
 
-contact_frame ul2 {
+contact_frame ul {
   display: flex;
   justify-content: space-between;
 }
 
-contact_frame b {
+contact_frame a {
   color:   #13293d;;
   text-decoration: underline;
   justify-content: space-between;  
   font-size: 120%;
   margin-right: 50px;  
+  font-weight: bold;  
 }
 
 
@@ -246,25 +262,41 @@ footer {
   margin-left: 20px;
 }
 
-/* Added rotation, box-shadow, border-radius */
+
 .row_title {
   position: absolute;
   z-index: 2;
   top: 60%;
 
   color: #bbcfe1;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-align: center;
   border: 10px solid #bbcfe1;    
+
+  color: #13293d;
+  background-color: #bbcfe1;
+  text-align: left;
+
+  text-overflow: clip;
+  overflow: hidden;
+
 }
 
-/* Added border-radius to match the card */
+
 
 p1 {
-  text-align: left;
+/*  text-align: left;*/
   font-size: 120%;
   color: #13293d;
-  margin-left: 20px;  
+  text-align: initial;
+/*  margin-left: 20px;  */
+  padding-left: 20px;
+  text-indent: -20px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+/*  text-indent: 40px hanging;*/
 }
 
 p2 {
@@ -280,4 +312,14 @@ p3 {
   font-size: 120%;
   color: #13293d;
   background-color: #bbcfe1;  
+}
+
+dd
+{
+  font-size: 120%;
+  color: #13293d;
+  padding-left: 20px;  
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
