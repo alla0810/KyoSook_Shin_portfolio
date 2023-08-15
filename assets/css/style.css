@@ -21,28 +21,23 @@ header {
   text-align: center;
   background-color: #13293d;
   color: #fff;  
+  
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 2.0em;
   color: #13293d;
   background-color: #bbcfe1;
   font-weight: 900;
   padding-left: 40px;
-
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 h2 {    
-  font-size: 200%;
+  font-size: 2.0em;
   color: #13293d;
   background-color: #bbcfe1;
   font-weight: bold;  
   text-align: right;
-
-  text-overflow: clip;
-  overflow: hidden;
 }
 
 .background_img {
@@ -131,9 +126,6 @@ main {
 }
 
 left_box_text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-
   font-size: 300%;
   color: #13293d;
   background-color: #fff;
@@ -146,7 +138,7 @@ left_box_text {
 .box_right {
   flex: 1 1 80%;
   flex-wrap: nowrap;
-/*  width:80%;*/
+
   flex-direction: column;  
  
   padding: 10px;
@@ -156,17 +148,8 @@ left_box_text {
   border-width: 1px;
 
   min-width: auto;
-
-  text-overflow: clip;
-  overflow: hidden;
 }
 
-/*
-.float-left {
-  float: left;
-  margin-right: 25px;
-}
-*/
 
 .app_large_img
 {
@@ -178,12 +161,10 @@ left_box_text {
   width: 70vw;
   
   margin-left: 20px;
-  /*margin-right: 50px;  */
+
   overflow:auto;
 
   border: 10px solid #bbcfe1;
-
-/*  margin-bottom: 25px;  */
 }
 
 .app_small_img_frame
@@ -201,7 +182,6 @@ left_box_text {
   margin-left: 20px;
   overflow:auto;
 
-/*  border: 10px solid #bbcfe1;*/
   margin-bottom: 25px;    
 }
 
@@ -277,9 +257,6 @@ footer {
   background-color: #bbcfe1;
   text-align: left;
 
-  text-overflow: clip;
-  overflow: hidden;
-
 }
 
 
@@ -292,11 +269,6 @@ p1 {
 /*  margin-left: 20px;  */
   padding-left: 20px;
   text-indent: -20px;
-
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-/*  text-indent: 40px hanging;*/
 }
 
 p2 {
@@ -320,6 +292,158 @@ dd
   color: #13293d;
   padding-left: 20px;  
 
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
+
+
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) 
+{
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .box_left {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+    padding: 10px;
+    text-align: center;
+    border-style: none;
+    border-width: 1px;
+  
+    border-right-width: 0px;
+  
+    margin-bottom: 10px;
+  
+    min-width: auto;
+  }
+  
+  .box_right {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+
+    flex-direction: column;  
+   
+    padding: 10px;
+    padding-left: 20px;
+    text-align: left;
+    border-style: none;
+  
+    min-width: auto;
+  
+  }
+  
+  h2 {    
+    text-align: left;
+    font-size: 1.em;
+    flex-basis: 20%;
+  }
+
+  .app_large_img
+  {
+    flex-shrink: 1;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  
+    width: 90vw;
+    
+    margin-left: 20px;
+
+    overflow:auto;
+  
+    border: 10px solid #bbcfe1;
+
+  }
+  
+  .app_small_img_frame
+  {
+    display: flex;
+    flex-shrink: 1;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    
+    margin: 0 auto;
+  
+    margin-left: 20px;
+    overflow:auto;
+  
+    margin-bottom: 25px;    
+  }
+
+  contact_frame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    text-align: center;
+  
+    color: #fff;  
+    margin-left: 20px;  
+  }
+  
+
+  }
+  
+  
+
+/* Large smartphones */
+@media screen and (max-width: 768px) 
+{
+  body{
+    width: 100%;  
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) 
+{
+  body{
+    width: 100%;  
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+}
+
+
+/* Galaxy Folder */
+@media screen and (max-width: 280px) 
+{
+  body{
+    width: 100%;  
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+}
+
