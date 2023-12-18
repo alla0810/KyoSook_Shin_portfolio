@@ -1,12 +1,31 @@
 # KyoSook_Shin_portfolio
  
+## Description
+
+This site provides portfolio of KyoSook Shin's work samples.
+
+## Features
+
+* WHEN you load the portfolio, THEN you am presented with KyoSook Shin's name, a recent photo or avatar, and links to sections about my works, and how to contact me
+
+* WHEN you click one of the links in the navigation, THEN the UI scrolls to the corresponding section
+
+* WHEN you click on the link to the section about their work, THEN the UI scrolls to a section with titled images of the applications
+
+* WHEN you click on the images of the applications, THEN you am taken to that deployed application
+
+* WHEN you resize the page or view the site on various screens and devices, THEN you are presented with a responsive layout that adapts to your viewport
+
+## Contact
   * Author: Kyosook Shin
   * Author's Email: kyosook.shin@gmail.com
   * Deployed URL: https://alla0810.github.io/KyoSook_Shin_portfolio/
   * GitHub: https://github.com/alla0810/KyoSook_Shin_portfolio
-  * screenshot
-    ![Screenshot 1](./assets/images/screen1.png)
-    ![Screenshot 2](./assets/images/screen2.png)
+
+## Screenshots
+
+  ![Screenshot 1](./assets/images/screen1.png)
+  ![Screenshot 2](./assets/images/screen2.png)
 
 ## Source Code References
   This project has used some reference codes from the following sites
@@ -14,52 +33,3 @@
     * https://git.bootcampcontent.com/University-of-Texas-at-Austin/UTA-VIRT-FSF-PT-07-2023-U-LOLC/-/tree/main/02-Advanced-CSS/01-Activities
 
 
-  
-## User Story
-
-AS AN employer
-I WANT to view a pontential employee's deployeed portfolio of work sample
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-
-## Acceptance Criteria
-
-GIVEN I need to sample a potential employee's previous work
-
-* WHEN I load their portfolio, THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-
-* WHEN I click one of the links in the navigation, THEN the UI scrolls to the corresponding section
-
-* WHEN I click on the link to the section about their work, THEN the UI scrools to a section with titled images of the developer's applications
-
-* WHEN I am presented with the developer's first application, THEN that application's image should be larger in size than the others
-
-* WHEN I click on the images of the applications, THEN I am taken to that deployed application
-
-* WHEN I resize the page or view the site on various screens and devices, THEN I am presented with a responsive layout that adapts to my viewport
-
-## Technical Acceptance Criteria: 40%
-
-Satisfies all of the preceding acceptance criteria.
-
-
-## Deployment: 32%
-
-* Application deployed at live URL.
-* Application loads with no errors.
-* Application GitHub URL submitted.
-* GitHub repository that contains application code.
-
-## Application Quality: 15%
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
- 
- ![Application resembles the mock-up functionality provided in the Challenge instructions.](./assets/images//02-advanced-css-homework-demo.gif)
-
-
-## Repository Quality: 13%
-
-* Repository has a unique name.
-* Repository follows best practices for file structure and naming conventions.
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-* Repository contains multiple descriptive commit messages.
-* Repository contains a quality README file with description, screenshot, and link to deployed application.
